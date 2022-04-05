@@ -52,8 +52,7 @@ class Events
     */
    public static function onMessage($client_id, $message)
    {
-//        // 向所有人发送
-//        Gateway::sendToAll("$client_id said $message\r\n");
+
        $message_data = json_decode($message,true);
        if (!$message_data){
            return;
@@ -85,8 +84,6 @@ class Events
                 }
                Gateway::sendToUid($fromid,json_encode($data));
                return;
-
-
 
        }
 

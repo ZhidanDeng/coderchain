@@ -6,6 +6,9 @@
  * @TIME: 15:42
  **/
 namespace chat\controller;
+use chat\dao;
+use GatewayWorker\Gateway;
+
 header('Access-Control-Allow-Origin:*');
 class Chat{
     private $log_path = "/ex/chat/";
@@ -22,9 +25,18 @@ class Chat{
     }
 
     public function save_message(){
-        /*
-         * 操作数据库，保存聊天记录
-         * */
+        $name = $this->getName(10);
+
+    }
+
+
+    /*
+     * 根据用户ID返回用户姓名
+     * */
+    public function getName($id){
+        $dao = new dao\Chat();
+        return $dao->getName($id);
+
     }
 
 }
