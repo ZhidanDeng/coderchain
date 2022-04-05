@@ -1,0 +1,4 @@
+2022/Apr/04 16:13:58=>[code:11001;info:url in lack of pathinfo for /;wrongFile:D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\rtp\module\AutomaticallyModule.class.php;wrongLine:36];
+2022/Apr/04 16:32:47=>[code:11001;info:url in lack of pathinfo for /index.php;wrongFile:D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\rtp\module\AutomaticallyModule.class.php;wrongLine:36];
+2022/Apr/04 16:37:36=>[code:11006;info:undefined operation or illegal operation name for /index.php/chat/Chat/hi;wrongFile:D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\rtp\module\AutomaticallyModule.class.php;wrongLine:104];
+2022/Apr/04 17:00:11=>[code:11006;info:undefined operation or illegal operation name for /index.php/websocket/Websocket/hi;wrongFile:D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\rtp\module\AutomaticallyModule.class.php;wrongLine:104];

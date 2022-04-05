@@ -1,0 +1,182 @@
+2022-03-31 16:39:01 pid:1 Exception: You can't send(NULL) to client, you need to convert it to a string.  in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Protocols\Websocket.php:230
+Stack trace:
+#0 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(321): Workerman\Protocols\Websocket::encode()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\Gateway.php(639): Workerman\Connection\TcpConnection->send()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\Gateway->onWorkerMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\Gateway.php(290): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\Gateway->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_gateway.php(63): Workerman\Worker::runAll()
+#10 {main}
+2022-03-31 16:39:29 pid:1 Exception: You can't send(NULL) to client, you need to convert it to a string.  in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Protocols\Websocket.php:230
+Stack trace:
+#0 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(321): Workerman\Protocols\Websocket::encode()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\Gateway.php(639): Workerman\Connection\TcpConnection->send()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\Gateway->onWorkerMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\Gateway.php(290): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\Gateway->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_gateway.php(63): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 12:11:50 pid:1 Error: Cannot use object of type stdClass as array in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:61
+Stack trace:
+#0 [internal function]: Events::onMessage()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 12:11:58 pid:1 Error: Cannot use object of type stdClass as array in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:61
+Stack trace:
+#0 [internal function]: Events::onMessage()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 12:12:28 pid:1 Error: Cannot use object of type stdClass as array in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:61
+Stack trace:
+#0 [internal function]: Events::onMessage()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 12:12:29 pid:1 Error: Cannot use object of type stdClass as array in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:61
+Stack trace:
+#0 [internal function]: Events::onMessage()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 12:23:55 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:23:56 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:23:57 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:23:58 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:23:59 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:00 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:01 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:02 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:03 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:04 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:05 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:06 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:07 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:08 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:09 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:10 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:11 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:12 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:13 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:14 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:15 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:16 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:17 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:18 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:19 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:24:20 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2022-04-04 12:43:19 pid:1 TypeError: Cannot access offset of type string on string in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:64
+Stack trace:
+#0 [internal function]: Events::onMessage()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 12:43:20 pid:1 TypeError: Cannot access offset of type string on string in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:64
+Stack trace:
+#0 [internal function]: Events::onMessage()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 13:00:00 pid:1 TypeError: Cannot access offset of type string on string in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:67
+Stack trace:
+#0 [internal function]: Events::onMessage()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 13:01:22 pid:1 TypeError: Cannot access offset of type string on string in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:67
+Stack trace:
+#0 [internal function]: Events::onMessage()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 13:01:26 pid:1 TypeError: Cannot access offset of type string on string in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:67
+Stack trace:
+#0 [internal function]: Events::onMessage()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-04-04 23:54:05 pid:1 Exception: You can't send(array) to client, you need to convert it to a string.  in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Protocols\Websocket.php:230
+Stack trace:
+#0 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(321): Workerman\Protocols\Websocket::encode()
+#1 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\Gateway.php(805): Workerman\Connection\TcpConnection->send()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\Gateway->onWorkerMessage()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\Gateway.php(290): Workerman\Worker->run()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\Gateway->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_gateway.php(63): Workerman\Worker::runAll()
+#10 {main}

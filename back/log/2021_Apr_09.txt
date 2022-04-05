@@ -1,0 +1,2 @@
+2021/Apr/09 17:41:39=>[code:11003;info:error in lack of controllerName for /coderChain_gdut/back/;wrongFile:E:\workPlace\php\coderChain_gdut\back\rtp\module\AutomaticallyModule.class.php;wrongLine:52];
+2021/Apr/09 17:41:46=>[code:11004;info:error in lack of operationName for /coderChain_gdut/back/user/User;wrongFile:E:\workPlace\php\coderChain_gdut\back\rtp\module\AutomaticallyModule.class.php;wrongLine:54];

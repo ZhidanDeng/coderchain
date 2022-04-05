@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+<body>
+
+</body>
+<script>
+    let ws = new WebSocket('ws://localhost:8000');
+    console.log(ws.readyState);
+    ws.onopen = function (){
+        console.log('握手成功');
+    }
+    ws.onerror = function (e){
+        console.log(e);
+    }
+
+</script>
+</html>
