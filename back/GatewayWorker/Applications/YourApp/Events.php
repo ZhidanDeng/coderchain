@@ -34,10 +34,7 @@ class Events
      */
     public static function onConnect($client_id)
     {
-//        // 向当前client_id发送数据
-//        Gateway::sendToClient($client_id, "Hello $client_id\\r\\n");
-//        // 向所有人发送
-//        Gateway::sendToAll("$client_id login\r\n");
+
         Gateway::sendToClient($client_id,json_encode([
             'type'=>'init',
             'client_id'=>$client_id
@@ -66,12 +63,13 @@ class Events
                $text = $message_data['data'];
                $fromid = $message_data['fromid'];
                $toid = $message_data['toid'];
+               $now = new DateTime();
                $data = [
                     'type'=>'say',
                     'fromid'=>$fromid,
                     'toid'=>$toid,
                     'text'=>$text,
-                    'time'=>time(),
+                    'time'=>$now->format('Y-m-d H-i-s'),
                     'isread'=>''
                 ];
                 if (Gateway::isUidOnline($toid)){

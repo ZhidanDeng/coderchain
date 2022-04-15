@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.4.2/jquery.min.js"></script>
+    <script type="application/javascript" src="ajaxfileupload.js"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Chat.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8">
-    <title>Chat</title>
+    <title>测试</title>
 </head>
 <body>
 
-</body>
-<script>
-    let ws = new WebSocket('ws://localhost:8000');
-    console.log(ws.readyState);
-    ws.onopen = function (){
-        console.log('握手成功');
-    }
-    ws.onerror = function (e){
-        console.log(e);
-    }
+<div class="container">
+    <div class="content" id="express">
+        <div class="name">
+            <p style="text-align: center">Name</p>
+        </div>
+        <div class="item item-center"><span>已建立连接</span></div>
+    </div>
 
-</script>
+    <div class="input-area">
+        <div class="expansion-area">
+            <input id="file" name="file" type="file" style="display: none">
+            <i class="glyphicon glyphicon-plus" id="uploadIcon" onclick="upload()"></i>
+        </div>
+        <textarea name="text" id="textarea"></textarea>
+        <div class="button-area">
+            <button type="button" id="send-btn" onclick="send()">发 送</button>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="application/javascript" src="Chat.js"></script>
 </html>

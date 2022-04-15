@@ -9,7 +9,12 @@ namespace chat\controller;
 use chat\dao;
 use GatewayWorker\Gateway;
 
-header('Access-Control-Allow-Origin:*');
+header('content-type:application/json;charset=utf8');
+
+header("Access-Control-Allow-Origin:*");
+
+header("Access-Control-Allow-Methods:GET,POST");
+
 class Chat{
     private $log_path = "/ex/chat/";
 
@@ -24,8 +29,18 @@ class Chat{
         $this->logger = new \log\module\Logger($this->log_path);
     }
 
-    public function save_message(){
-        $name = $this->getName(10);
+    public function saveMessage(){
+
+        $data['content'] = $_POST['text'];
+        $data['fromid'] = $_POST['fromid'];
+        $data['toid'] = $_POST['toid'];
+        $data['time'] = $_POST['time'];
+        $data['fromname'] = $this->getName($_POST['fromid']);
+        $data['toname'] = $this->getName($_POST['toid']);
+        $data['type'] = $_POST['type'];
+        $data['isread'] = $_POST['isread'];
+        $dao = new dao\Chat();
+        $dao->insertData($data);
 
     }
 
@@ -36,6 +51,32 @@ class Chat{
     public function getName($id){
         $dao = new dao\Chat();
         return $dao->getName($id);
+    }
+    /*
+     * 获取头像
+     * */
+    public function getAvatar(){
+        $fromid = $_POST['fromid'];
+        $toid = $_POST['toid'];
+        $dao = new dao\Chat();
+        echo json_encode($dao->getAvatar($fromid,$toid));
+        return json_encode($dao->getAvatar($fromid,$toid));
+    }
+
+
+
+    public function loadMessage(){
+        $fromid = $_POST['fromid'];
+        $toid = $_POST['toid'];
+        $dao = new dao\Chat();
+        echo json_encode($dao->loadData($fromid,$toid));
+        return json_encode($dao->loadData($fromid,$toid));
+    }
+
+    public function uploadImg(){
+        $dao = new dao\Chat();
+        echo json_encode($dao->uploadImg());
+        return json_encode($dao->uploadImg());
 
     }
 

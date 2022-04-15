@@ -66,6 +66,7 @@ define('IPFS_API', 'http://119.91.150.124:5001/api/v0');
 
 define('IPFS_VIEW', 'http://119.91.150.124:8080');
 
+define('BASE_PATH',str_replace('\\','/',realpath(dirname(__FILE__).'/'))).'/';
 
 //数据库是否需要保持长期连接（长连接）,多线程高并发环境下请开启,默认关闭
 define('DB_PERSISTENT_CONNECTION', FALSE);

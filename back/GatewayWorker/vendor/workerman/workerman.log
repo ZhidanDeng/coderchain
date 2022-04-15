@@ -180,3 +180,31 @@ Stack trace:
 #8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
 #9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_gateway.php(63): Workerman\Worker::runAll()
 #10 {main}
+2022-04-10 10:46:02 pid:1 Exception: DateTime::__construct(): Failed to parse time string (Y-m-d H-i-s) at position 1 (-): Unexpected character in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:71
+Stack trace:
+#0 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php(71): DateTime->__construct()
+#1 [internal function]: Events::onMessage()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#10 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-10 10:49:10 pid:1 Exception: DateTime::__construct(): Failed to parse time string (Y-m-d H-i-s) at position 1 (-): Unexpected character in D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php:71
+Stack trace:
+#0 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\Events.php(71): DateTime->__construct()
+#1 [internal function]: Events::onMessage()
+#2 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func()
+#3 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage()
+#4 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#6 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#8 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#9 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#10 D:\Apps\phpstudy_pro\WWW\coder-chain_gdut-master\back\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
